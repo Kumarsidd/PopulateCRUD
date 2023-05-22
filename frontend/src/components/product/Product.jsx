@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import CreateProductPage from "./CreateProductPage";
+import CreateProductPage from "./CreateProductPage";
 
 const ProductPage = () => {
   const [products, setProducts] = useState([]);
@@ -83,7 +83,6 @@ const ProductPage = () => {
 
   return (
     <>
-      {/* <CreateProductPage /> */}
       <div className="container mx-auto px-4 py-6 bg-white shadow-lg rounded-lg">
         <h2 className="text-2xl font-bold mb-4">All Products</h2>
         <hr className="my-4" />
@@ -187,6 +186,7 @@ const ProductPage = () => {
           ))}
         </ul>
       </div>
+      <CreateProductPage />
     </>
   );
 };

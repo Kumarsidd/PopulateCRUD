@@ -66,7 +66,6 @@ const CategoriesPage = () => {
 
   return (
     <>
-      <CreateCategoryPage />
       <div className="container px-4 py-6 mx-auto">
         <h2 className="text-2xl font-bold mb-4">All Categories</h2>
         <ul>
@@ -151,6 +150,7 @@ const CategoriesPage = () => {
           ))}
         </ul>
       </div>
+      <CreateCategoryPage />
     </>
   );
 };
